@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ศ.อุบล ก๋วยจั๊บญวน 🍲 สั่งได้เลย!</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+<!-- ════ HEADER ════ -->
+<div class="header">
+  <img class="logo" src="logo.png" alt="ศ.อุบล ก๋วยจั๊บญวน">
+  <h1>ศ.อุบล<span>ก๋วยจั๊บญวน</span></h1>
+  <p class="header-sub">เส้นเหนียวนุ่ม น้ำซุปกลมกล่อม สไตล์ ศ.อุบล</p>
+</div>
+
+<!-- ════ INFO BAR ════ -->
+<div class="info-bar">
+  <div class="info-chip">🕐 <b>07:30 – 19:30 น.</b></div>
+  <div class="info-chip">📅 <b>จันทร์ – เสาร์</b></div>
+  <div class="info-chip fresh">✨ วัตถุดิบสดใหม่ทุกวัน</div>
+</div>
+
+<!-- ════ CART BAR ════ -->
+<div class="cart-bar">
+  <div class="cart-info">
+    <div class="cart-icon">🛒<span class="cart-count" id="cartCount">0</span></div>
+    <div class="cart-summary" id="cartSummary">ยังไม่มีรายการ</div>
+  </div>
+  <div class="cart-total" id="cartTotal">฿0</div>
+  <button class="btn-checkout" id="btnCheckout" onclick="openCart()" disabled>ดูตะกร้า</button>
+</div>
+
+<!-- ════ HERO BANNER ════ -->
+<div class="hero">
+  <img src="hero_bowl.jpg" alt="ก๋วยจั๊บญวน ศ.อุบล">
+  <div class="hero-fade"></div>
+</div>
+
+<!-- ════ BASE BOWL GRID ════ -->
+<div class="section-title">🍲 เลือกชามก๋วยจั๊บ</div>
+<div class="container">
+  <div class="grid-3" id="grid-bowl"></div>
+
+  <div class="section-title" style="padding-top:26px">🥢 เพิ่มเครื่อง</div>
+  <div class="grid-3" id="grid-addon"></div>
+</div>
+
+<!-- ════ DELIVERY NOTE ════ -->
+<div class="delivery-note">
+  <span>🛵</span>
+  <span>บริการส่งตรงถึงหน้าบ้าน — ภายในหมู่บ้านเท่านั้น</span>
+</div>
+
+<!-- ════ FOOTER ════ -->
+<div class="footer">
+  <div class="contact-row">
+    <span>🏠 ศ.อุบล ก๋วยจั๊บญวน</span>
+    <span>📞 <a href="tel:0000000000">โทร: 0XX-XXX-XXXX</a></span>
+  </div>
+  © 2026 ศ.อุบล ก๋วยจั๊บญวน | สั่งง่าย ส่งไว ถึงบ้านครับ
+</div>
+
+<!-- ════ LINE FAB ════ -->
+<a class="line-fab" href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank">💬</a>
+
+<!-- ════ TOAST ════ -->
+<div class="toast" id="toast"></div>
+
+<!-- ════ CART MODAL ════ -->
+<div class="modal-bg" id="modalBg" onclick="closeCartOutside(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-head-left">
+        <div class="modal-head-icon">🛒</div>
+        <div>
+          <h2>ตะกร้าสินค้า</h2>
+          <div class="modal-head-sub" id="modalHeadSub">กำลังโหลด...</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <button class="btn-line" id="btnLine" onclick="sendToLine()">
+        <span>💬</span>
+        <span>
+          สั่งผ่าน LINE ทันที!
+          <span class="btn-line-sub">กดเพื่อส่งออเดอร์ไปหาร้าน</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
