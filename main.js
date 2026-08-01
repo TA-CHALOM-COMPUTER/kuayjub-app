@@ -3,9 +3,9 @@
    ══════════════════════════════════════════════════ */
 
 const IMG = {
-  b1: "hero_bowl.jpg",
-  b2: "hero_bowl.jpg",
-  b3: "hero_bowl.jpg",
+  b1: "bowl_45.jpg",
+  b2: "bowl_50.jpg",
+  b3: "bowl_60.jpg",
   a1: "addon_pork_balls.png",
   a2: "addon_pork_loaf.png",
   a3: "addon_pork_ribs.png",
