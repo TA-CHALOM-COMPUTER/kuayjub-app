@@ -248,7 +248,7 @@ function genOrderId() {
 }
 
 /* ── ตั้งค่า Apps Script Web App URL (ได้จากขั้นตอน Deploy) ── */
-const APPS_SCRIPT_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwdBCcwekO5O0prdBLqLvTnlyEFMLHCZilpsZq5lfFCNpMLWKEZNgJ1PVbNUJW1Zvwd2g/exec";
 
 /* ── ส่งออเดอร์ ── */
 async function sendToLine() {
