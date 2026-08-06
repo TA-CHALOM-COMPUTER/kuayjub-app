@@ -28,7 +28,7 @@ const addonMenus = [
 let cart = [];
 
 /* ── ลิงก์เพิ่มเพื่อน LINE OA ── */
-const LINE_OA_LINK = "https://line.me/ti/p/~YOUR_LINE_ID";
+const LINE_OA_LINK = "https://line.me/ti/p/@710wahdw";
 
 function connectLine() {
   window.open(LINE_OA_LINK, "_blank");
