@@ -28,7 +28,7 @@ const addonMenus = [
 let cart = [];
 
 /* ── ลิงก์เพิ่มเพื่อน LINE OA ── */
-const LINE_OA_LINK = "@710wahdw";
+const LINE_OA_LINK = "https://manager.line.biz/account/@710wahdw";
 
 function connectLine() {
   window.open(LINE_OA_LINK, "_blank");
@@ -210,7 +210,7 @@ function renderModal() {
   </div>`;
 
   const lineConnectHTML = `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 14px;margin:0 16px 10px;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.15);border-radius:12px;font-size:12px;">
-        <span>➕ เพิ่ม/ช่วยเหลือ</span>
+        <span>➕ เพิ่ม/ช่วยเหลือ (จะเพิ่มเพื่อนหรือไม่เพิ่มก็ได้ ข้ามขั้นตอนถัดไปได้เลย)</span>
         <button type="button" onclick="connectLine()" style="white-space:nowrap;background:#06c755;color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;">เพิ่มเพื่อน</button>
       </div>`;
 
