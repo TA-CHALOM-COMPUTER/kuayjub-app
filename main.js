@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════
-   ศ.อุบล ก๋วยจั๊บญวน — ระบบสั่งอาหารในหมู่บ้าน
+   ฅ.อุบล ก๋วยจั๊บญวน — ระบบสั่งอาหารในหมู่บ้าน
    ══════════════════════════════════════════════════ */
 
 const IMG = {
@@ -28,7 +28,7 @@ const addonMenus = [
 let cart = [];
 
 /* ── ลิงก์เพิ่มเพื่อน LINE OA ── */
-const LINE_OA_LINK = "https://line.me/ti/p/@710wahdw";
+const LINE_OA_LINK = "@710wahdw";
 
 function connectLine() {
   window.open(LINE_OA_LINK, "_blank");
@@ -192,18 +192,18 @@ function renderModal() {
       <div class="field-row">
         <div class="field-wrap">
           <label class="field-label">บ้านเลขที่<span class="field-required">*</span></label>
-          <input class="field-input" id="fldHouseNo" type="text" placeholder="เช่น 159/306" maxlength="30">
+          <input class="field-input" id="fldHouseNo" type="text" placeholder="เช่น 306" maxlength="30">
           <span class="field-err">กรุณากรอกบ้านเลขที่</span>
         </div>
         <div class="field-wrap">
           <label class="field-label">ซอย / โซน</label>
-          <input class="field-input" id="fldSoi" type="text" placeholder="เช่น ซอย 3" maxlength="60">
+          <input class="field-input" id="fldSoi" type="text" placeholder="เช่น 3" maxlength="60">
         </div>
       </div>
       <div class="field-row full">
         <div class="field-wrap">
           <label class="field-label">หมายเหตุ</label>
-          <textarea class="field-input field-textarea" id="fldNote" rows="2" placeholder="เช่น ไม่ใส่ผัก, เผ็ดน้อย" maxlength="200"></textarea>
+          <textarea class="field-input field-textarea" id="fldNote" rows="2" placeholder="เช่น ไม่ใส่ผัก, สแกน 60/40" maxlength="200"></textarea>
         </div>
       </div>
     </div>
