@@ -27,11 +27,18 @@ const addonMenus = [
 
 let cart = [];
 
-/* ── ลิงก์เพิ่มเพื่อน LINE OA ── */
-const LINE_OA_LINK = "https://manager.line.biz/account/@710wahdw";
+/* ── ช่องทางติดต่อ LINE ของร้าน ──
+   LINE_OA_LINK   = ลิงก์เพิ่มเพื่อน LINE OA ของร้าน (@710wahdw)
+   LINE_ADMIN_LINK = ลิงก์ทักแชทหาแอดมินโดยตรง (LINE ID ส่วนตัว: sarun_2018) */
+const LINE_OA_LINK = "https://line.me/R/ti/p/@710wahdw";
+const LINE_ADMIN_LINK = "https://line.me/ti/p/~sarun_2018";
 
 function connectLine() {
   window.open(LINE_OA_LINK, "_blank");
+}
+
+function connectLineAdmin() {
+  window.open(LINE_ADMIN_LINK, "_blank");
 }
 
 /* ── Build product card ── */
@@ -209,9 +216,12 @@ function renderModal() {
     </div>
   </div>`;
 
-  const lineConnectHTML = `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 14px;margin:0 16px 10px;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.15);border-radius:12px;font-size:12px;">
+  const lineConnectHTML = `<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 14px;margin:0 16px 10px;background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.15);border-radius:12px;font-size:12px;flex-wrap:wrap;">
         <span>➕ เพิ่ม/ช่วยเหลือ (จะเพิ่มเพื่อนหรือไม่เพิ่มก็ได้ ข้ามขั้นตอนถัดไปได้เลย)</span>
-        <button type="button" onclick="connectLine()" style="white-space:nowrap;background:#06c755;color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;">เพิ่มเพื่อน</button>
+        <div style="display:flex;gap:8px;">
+          <button type="button" onclick="connectLine()" style="white-space:nowrap;background:#06c755;color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;">เพิ่มเพื่อนร้าน</button>
+          <button type="button" onclick="connectLineAdmin()" style="white-space:nowrap;background:#374151;color:#fff;border:none;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;">ทักแอดมินโดยตรง</button>
+        </div>
       </div>`;
 
   body.innerHTML = itemsHTML + summaryHTML + formHTML + lineConnectHTML;
