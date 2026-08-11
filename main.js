@@ -31,7 +31,7 @@ let cart = [];
    LINE_OA_LINK   = ลิงก์เพิ่มเพื่อน LINE OA ของร้าน (@710wahdw)
    LINE_ADMIN_LINK = ลิงก์ทักแชทหาแอดมินโดยตรง (LINE ID ส่วนตัว: sarun_2018) */
 const LINE_OA_LINK = "https://line.me/R/ti/p/@710wahdw";
-const LINE_ADMIN_LINK = "https://line.me/ti/p/~sarun_2018";
+const LINE_ADMIN_LINK = "https://line.me/ti/p/~pijittra1309";
 
 function connectLine() {
   window.open(LINE_OA_LINK, "_blank");
